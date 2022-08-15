@@ -5,5 +5,9 @@
 
 
 <p align="center">
-  <img width="1000" height="500" src="https://a.pomf.cat/hndpga.png">
+  <img width="700" height="500" src="https://a.pomf.cat/hndpga.png">
+</p>
+
+<p align="center">
+  <img width="700" height="500" src="https://a.pomf.cat/ygqtof.png">
 </p>
