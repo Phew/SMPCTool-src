@@ -10,6 +10,9 @@ this creates the opportunity for other modders to enchance this tool, and possbi
 - jedijosh920
 - all the other people who helped create this tool and who will continue to improve it.
 
+## original download
+https://www.nexusmods.com/marvelsspidermanremastered/mods/51
+
 <p align="center">
   <img width="700" height="500" src="https://a.pomf.cat/hndpga.png">
 </p>
