@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{6D8EE045-C9AD-4E00-A12A-1041D5996366}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SMPCTool</RootNamespace>
+    <AssemblyName>SMPCTool</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>SMPCTool.ico</ApplicationIcon>
+    <StartupObject>SMPCTool.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetZip">
+      <HintPath>..\..\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArchiveFile.cs" />
+    <Compile Include="AssetCompress.cs" />
+    <Compile Include="AssetDecompress2.cs" />
+    <Compile Include="Asset\Actor.cs" />
+    <Compile Include="CreateModForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateModForm.Designer.cs">
+      <DependentUpon>CreateModForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAG.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="InformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationForm.Designer.cs">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallModForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallModForm.Designer.cs">
+      <DependentUpon>InstallModForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewColumnSorter.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModFile.cs" />
+    <Compile Include="ModManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModManagerForm.Designer.cs">
+      <DependentUpon>ModManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OffsetEntry.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SearchFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchFindForm.Designer.cs">
+      <DependentUpon>SearchFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section.cs" />
+    <Compile Include="SizeEntry.cs" />
+    <Compile Include="SMPCMod.cs" />
+    <Compile Include="SMPCProject.cs" />
+    <Compile Include="Sorter1.cs" />
+    <Compile Include="SpansEntry.cs" />
+    <Compile Include="StringToHashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringToHashForm.Designer.cs">
+      <DependentUpon>StringToHashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextureToolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextureToolForm.Designer.cs">
+      <DependentUpon>TextureToolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOC.cs" />
+    <Compile Include="TOCMap.cs" />
+    <Compile Include="TOCMapEntry.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreateModForm.resources" />
+    <EmbeddedResource Include="InformationForm.resources" />
+    <EmbeddedResource Include="InstallModForm.resources" />
+    <EmbeddedResource Include="MainForm.resources" />
+    <EmbeddedResource Include="ModManagerForm.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="SearchFindForm.resources" />
+    <EmbeddedResource Include="StringToHashForm.resources" />
+    <EmbeddedResource Include="TextureToolForm.resources" />
+    <EmbeddedResource Include="WaitForm.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
