@@ -1,4 +1,4 @@
-# SMPCTool v1.10  
+# SMPCTool v1.1.1
 
 ## open-sourced the SMPCTool, and yes it builds & works as intended.
 yes its the actual source, straight from the tool on nexusmods.com. i like to know what im running, and im sure you do too.
