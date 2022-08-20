@@ -1,0 +1,9 @@
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\bin\Release\SMPCTool.exe
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\bin\Release\SMPCTool.pdb
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\bin\Release\DotNetZip.dll
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\obj\x64\Release\SMPCTool.csproj.AssemblyReference.cache
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\obj\x64\Release\SMPCTool.csproj.SuggestedBindingRedirects.cache
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\obj\x64\Release\SMPCTool.csproj.CoreCompileInputs.cache
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\obj\x64\Release\SMPCTool.csproj.CopyComplete
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\obj\x64\Release\SMPCTool.exe
+C:\Users\charge\Desktop\spiderman\SMPCTool\SMPCTool\obj\x64\Release\SMPCTool.pdb
